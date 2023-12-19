@@ -1,0 +1,728 @@
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1600px) {
+  body {
+    background: #000000;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+  
+/* Экран 1 */
+.firstscreen{
+  width: 97vw;
+  height: 137vw;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  left: 1vw;
+  top: 1vw;
+  display: block;
+}
+
+.sale{
+  width: 97vw;
+  height: 81vw;
+  background-color: rgb(255, 255, 255);
+  margin-left: -1vw;
+  margin-top: 1vw;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+h1{
+  font-family: "Montserrat-Light";
+  background-color: rgb(255, 255, 255);
+}
+
+.sl, .sl-3{
+  position: relative;
+  width: 32.3vw;
+  font-size: 17vw;
+  text-align: center;
+  animation: text 4s linear infinite;
+  color: rgb(0, 0, 0);
+}
+
+@keyframes text{
+	0%{ top: -15%;}
+	100%{  top: -450%;}
+  }
+
+
+.sl-2{
+  position: relative;
+  width: 33vw;
+  font-size: 17vw;
+  text-align: center;
+  animation: text2 2s linear infinite;
+}
+
+
+@keyframes text2{
+	0%{ top: -10%;}
+	100%{  top: -375%;}
+  }
+
+h1:hover{
+	color: #ffffff;
+	background-color: rgb(0, 0, 0);
+}
+
+.mark1{
+	width: 49vw;
+	height: 15vw;
+  }
+  
+.button1{
+    position: absolute;
+    width: 49vw;
+    height: 15vw;
+    right: -0.7vw;
+    top: 55vw;
+    transform: rotate(33deg);
+    z-index: 100;
+    }
+
+.button1:hover ~ .sale .sl{
+      animation-play-state: paused;
+     }
+.button1:hover ~ .sale .sl-2{
+      animation-play-state: paused;
+     }
+.button1:hover ~ .sale .sl-3{
+      animation-play-state: paused;
+     }
+
+.descrb{
+  width: 97vw;
+  height: 55vw;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  top: 0vw;
+  left: 0vw;
+}
+
+.inf{
+	font-family: "Montserrat-Light";
+	font-size: 3.5vw;
+	position: relative;
+	left: 13.5vw;
+	top: 17vw;
+}
+
+.cover{
+	position: relative;
+  width: 110vw;
+  height: 90vw;
+	left: -6.5vw;
+	top: -31vw;
+	transition: all 2s ease-out;
+}
+.cover:hover{
+	left: -100vw;
+}
+
+/* ВТОРОЙ ЭКРАН */
+
+.secondscreen{
+  background-color: #ffffff;
+  width: 97vw;
+  height: 34vw;
+  position: relative;
+  left: 1vw;
+  top: 2vw;
+}
+
+.second{
+  position: absolute;
+  width: 97vw;
+  height: 28vw;
+  top: 3vw;
+  background-size: cover;
+  animation: running waves 10s ease-in-out infinite alternate;
+ }
+
+@keyframes waves{
+  0% { background-image: url("../img/wave11.svg");}
+  10% { background-image: url("../img/wave22.svg");}
+  20% { background-image: url("../img/wave33.svg");}
+  30% { background-image: url("../img/wave11.svg");}
+  40% { background-image: url("../img/wave22.svg");}
+  50% { background-image: url("../img/wave33.svg");}
+  60% { background-image: url("../img/wave11.svg");}
+  70% { background-image: url("../img/wave22.svg");}
+  80% { background-image: url("../img/wave33.svg");}
+  90%  { background-image: url("../img/wave11.svg");}
+  100% { background-image: url("../img/wave22.svg");}
+ }
+
+ .mark2{
+  position: absolute;
+  width: 39vw;
+  height: 26vw;
+  transform: rotate(-25deg);
+  left: 0vw;
+  top: -6vw;
+  z-index: 100;
+ }
+
+ .mark2:hover ~ .second{
+  animation-play-state: paused;
+}
+
+
+
+/* ТРЕТИЙ ЭКРАН */
+.thirdscreen{
+  width: 97vw;
+  height: 86.75vw;
+  background-color: #ffffff;
+  position: relative;
+  left: 1vw;
+  top: 3vw;
+ }
+
+ .mark3 {
+  position: absolute;
+  width: 44.5vw;
+  height: 30vw;
+  right: 5vw;
+  transform: rotate(25.5deg);
+  top: -15vw;
+ }
+
+ .fon{
+  width: 80vw;
+  height: 86.75vw;
+  margin-left: 8.5vw;
+  background-image: url("../img/back2.svg");
+  background-size:100%;
+ }
+
+ .back{
+  display: none;
+ }
+ 
+
+ .n1{
+	position: absolute;
+	font-size: 9vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left: 19vw;
+	top: 11vw;
+	animation: rotation 1s infinite;
+ }
+
+
+@keyframes rotation {
+	0% {
+	  transform: rotate(0deg)}
+	50% {
+	  transform: rotate(30deg);
+	}
+	100% {
+		transform: rotate(0deg)}
+  }
+
+ .n2{
+	position: absolute;
+	font-size: 9vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left: 19vw;
+	top: 38vw;
+	animation: rotation2 1s infinite;
+ }
+
+
+
+@keyframes rotation2 {
+	0% {
+	  transform: rotate(0deg)}
+	50% {
+	  transform: rotate(-45deg);
+	}
+	100% {
+		transform: rotate(0deg)}
+  }
+
+ .n3{
+	position: absolute;
+	font-size: 9vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left: 19vw;
+	top: 67vw;
+	animation: rotation3 1s infinite;
+ }
+
+
+@keyframes rotation3 {
+	0% {
+	  transform: rotate(0deg)}
+	50% {
+	  transform: rotate(45deg);
+	}
+	100% {
+		transform: rotate(0deg)}
+  }
+
+.n4{
+  display: none;
+}
+@keyframes rotation4 {
+	0% {
+	  transform: rotate(0deg)}
+	50% {
+	  transform: rotate(-25deg);
+	}
+	100% {
+		transform: rotate(0deg)}
+  }
+
+.n5{
+display: none;
+}
+
+@keyframes rotation5 {
+	0% {
+	  transform: rotate(0deg)}
+	50% {
+	  transform: rotate(55deg);
+	}
+	100% {
+		transform: rotate(0deg)}
+  }
+
+.n6{
+display: none;
+}
+
+@keyframes rotation6 {
+	0% {
+	  transform: rotate(0deg)}
+	50% {
+	  transform: rotate(-45deg);
+	}
+	100% {
+		transform: rotate(0deg)}
+  }
+
+.n7{
+  position: absolute;
+	font-size: 9vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left: 58vw;
+	top: 11vw;
+	animation: rotation4 1s infinite;
+}
+
+.n8{
+  position: absolute;
+	font-size: 9vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left:58vw;
+	top: 38vw;
+	animation: rotation5 1s infinite;
+}
+
+.n9{
+  position: absolute;
+	font-size: 9vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left: 58vw;
+	top: 67vw;
+	animation: rotation6 1s infinite;
+}
+
+
+.mark3:hover ~ .n1{
+	animation: stop 2s infinite;
+ }
+ .mark3:hover ~ .n2{
+	animation: stop 2s infinite;
+ }
+ .mark3:hover ~ .n3{
+	animation: stop 2s infinite;
+ }
+ .mark3:hover ~ .n4{
+	animation: stop 2s infinite;
+ }
+ .mark3:hover ~ .n5{
+	animation: stop 2s infinite;
+ }
+ .mark3:hover ~ .n6{
+	animation: stop 2s infinite;
+ }
+
+ @keyframes stop{
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(0deg);}
+}
+
+
+/* Четвертый экран */
+.fourthscreen{
+	position: relative;
+	width: 97vw;
+	height: 59vw;
+	top: 4vw;
+	left: 1vw;
+}
+.motion{
+	width: 97vw;
+	height: 59vw;
+	margin: 0vw;
+	overflow: hidden;
+	background-color: rgb(0, 0, 0);
+}
+.playlist{
+	display: flex;
+	width: 416vw;
+	animation: playlist 8s linear infinite;
+	animation-play-state: running;
+}
+
+.playlist:hover{
+	animation-play-state: paused;
+}
+
+
+.play1{
+	width: 51vw;
+	height: 59vw;
+	margin-right: 1vw;
+	background-color: #ffffff;
+}
+.play2 {
+	width: 51vw;
+	height: 59vw;
+	margin-right: 1vw;
+	background-color: #ffffff;
+}
+
+.play3{
+	width: 51vw;
+	height: 59vw;
+	margin-right: 1vw;
+	background-color: #ffffff;
+}
+.play4{
+	width: 51vw;
+	height: 59vw;
+	margin-right: 1vw;
+	background-color: #ffffff;
+}
+
+@keyframes playlist {
+	0% {margin-left: -208vw;}
+	100% {margin-left: 0px;}
+  }
+
+.pl{
+	position: relative;
+	width: 49vw;
+	height: 49vw;
+	background-color: #000000;
+	left: 1vw;
+	top: 1vw;
+	overflow: hidden;
+	display: block;
+}
+
+.front{
+	/* left: 0vw;
+	top: 0vw; */
+	margin-left: 1vw;
+	margin-top: 1vw;
+	width: 47vw;
+	height: 47vw;
+}
+
+.on{
+	background-image: url("../img/off.svg");
+	background-size: 100%;
+	position: relative;
+	top: 2.5vw;
+	left: 5vw;
+	width: 32vw;
+	height: 5vw;
+}
+
+.on:hover{
+	background-image: url("../img/on.svg");
+}
+
+.mark4{
+	position: absolute;
+    width: 39vw;
+    height: 26vw;
+	left: 2vw;
+	top: -10vw;
+	transform: rotate(-27deg);
+	z-index: 100;
+}
+
+.mark4:hover ~ .motion  .playlist{
+	animation-play-state: paused;
+ }
+
+
+/* Пятый экран */
+.fifthscreen{
+	width: 97vw;
+	height: 67vw;
+	background-color: #ffffff;
+	position: relative;
+	left: 1vw;
+	top: 5vw;
+}
+
+/* Падение */
+.falling{
+	width: 97vw;
+	height: 67vw;
+	position: absolute;
+	overflow: hidden;
+}
+
+.fall.a, .fall.b, .fall.c, .fall.d, .fall.e, .fall.f {
+	position: absolute;
+	width: 39vw;
+	height: 15vw;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	top: -30vw;
+}
+.fall:hover{
+	animation-play-state: paused;
+}
+
+.fall.a {
+	animation-name: fall, trans-a;
+	animation-duration: 12s;
+}
+
+.fall.b {
+	animation-name: fall, trans-b;
+	animation-duration: 8s;
+}
+
+.fall.c {
+	animation-name: fall, trans-c;
+	animation-duration: 6s;
+}
+
+.fall.d {
+	animation-name: fall, trans-d;
+	animation-duration: 4s;
+}
+
+.fall.e {
+	animation-name: fall, trans-e;
+	animation-duration: 5s;
+}
+
+.fall.f {
+	animation-name: fall, trans-f;
+	animation-duration: 7s;
+}
+
+@keyframes fall {
+	from {top: -20vw;}
+	to {top: 73vw;}
+}
+
+@keyframes trans-a {
+	from {
+		transform: rotate(-10deg);
+	}
+	to {
+		transform: rotate(20deg);
+	}
+}
+
+@keyframes trans-b {
+	from {
+		transform: rotate(15deg);
+	}
+	to {
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes trans-c {
+	from {
+		transform: rotate(-15deg);
+	}
+	to {
+		transform: rotate(30deg);
+	}
+}
+
+@keyframes trans-d {
+	from {
+		transform: rotate(-20deg);
+	}
+	to {
+		transform: rotate(50deg);
+	}
+}
+
+@keyframes trans-e {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes trans-f {
+	from {
+		transform: rotate(10deg);
+	}
+	to {
+		transform: rotate(-10deg);
+	}
+}
+
+@keyframes trans-g {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(45deg);
+	}
+}
+
+@keyframes trans-h {
+	from {
+		transform: rotate(15deg);
+	}
+	to {
+		transform: rotate(-30deg);
+	}
+}
+
+.fall#a1 {
+	left: calc(50% - 60vw);
+	animation-delay: 0s;
+}
+
+.fall#a2 {
+	left: calc(50% - 20vw);
+	animation-delay: 0s;
+}
+
+.fall#a3 {
+	left: calc(50% - 35vw);
+	animation-delay: 0s;
+}
+
+.fall#a4 {
+	left: calc(50% - 50vw);
+	animation-delay: 1s;
+}
+
+.fall#a5 {
+	left: calc(50% + 60vw);
+	animation-delay: 0s;
+}
+
+.fall#a6 {
+	left: calc(50% + 20vw);
+	animation-delay: 0s;
+}
+
+.fall#b1 {
+	left: calc(50% - 30vw);
+	animation-delay: 2s;
+}
+
+.fall#b2 {
+	left: calc(50% - 60vw);
+	animation-delay: 4s;
+}
+
+.fall#b3 {
+	left: calc(50% + 40vw);
+	animation-delay: 3s;
+}
+
+.fall#b4 {
+	left: calc(50% + 30vw);
+	animation-delay: 3s;
+}
+
+.fall#b5 {
+	left: calc(50% - 13vw);
+	animation-delay: 0s;
+}
+
+.fall#b6 {
+	left: calc(50% - 33vw);
+	animation-delay: 0s;
+}
+
+.mark5{
+	position: absolute;
+  width: 44.5vw;
+  height: 30vw;
+	top: -12vw;
+	transform: rotate(20deg);
+	right: 5vw;
+	z-index: 100;
+}
+
+.mark5:hover ~ .falling .fall{
+	animation-play-state: paused;
+ }
+
+
+ .mark6{
+	position: absolute;
+	width: 39vw;
+	height: 15vw;
+	bottom: -8vw;
+	transform: rotate(15deg);
+	z-index: 100;
+}
+.mark7{
+	position: absolute;
+	width: 39vw;
+	height: 15vw;
+	bottom: -15vw;
+	transform: rotate(-5deg);
+	left: 25vw;
+	z-index: 100;
+}
+
+
+
+
+/* Лого */
+.logo{
+	width: 25vw;
+	height: 8vw;
+	position: relative;
+	/* left: 80vw; */
+  left: 72vw;
+	top: 6vw;
+}
+
+
+
+
+
+
+
+
+
+
+}

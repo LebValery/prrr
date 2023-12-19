@@ -1,0 +1,901 @@
+body {
+    background: #000000;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+  
+/* Экран 1 */
+.firstscreen{
+  width: 97vw;
+  height: 33vw;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  left: 1vw;
+  top: 1vw;
+  display: flex;
+}
+
+.descrb{
+  width: 57vw;
+  height: 33vw;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  left: 0vw;
+}
+
+.inf{
+	font-family: "Montserrat-Light";
+	font-size: 2vw;
+	position: relative;
+	left: 8vw;
+	top: 9.5vw;
+}
+
+.cover{
+	position: relative;
+	width: 62vw;
+	height: 48.5vw;
+	left: -2.5vw;
+	top: -20vw;
+	transition: all 2s ease-out;
+}
+.cover:hover{
+	left: -55vw;
+}
+
+
+.sale{
+  width: 39vw;
+  height: 33vw;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  left: 1vw;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+h1{
+  font-family: "Montserrat-Light";
+  background-color: rgb(255, 255, 255);
+}
+
+.sl, .sl-3{
+  position: relative;
+  width: 13vw;
+  font-size: 6vw;
+  text-align: center;
+  animation: text 4s linear infinite;
+  color: rgb(0, 0, 0);
+}
+
+@keyframes text{
+	0%{ top: -15%;}
+	100%{  top: -450%;}
+  }
+
+
+.sl-2{
+  position: relative;
+  width: 13vw;
+  font-size: 6vw;
+  text-align: center;
+  animation: text2 2s linear infinite;
+}
+
+
+@keyframes text2{
+	0%{ top: -10%;}
+	100%{  top: -375%;}
+  }
+
+h1:hover{
+	color: #ffffff;
+	background-color: rgb(0, 0, 0);
+}
+
+.secondscreen{
+  background-color: #ffffff;
+  width: 97vw;
+  height: 27vw;
+  position: relative;
+  left: 1vw;
+  top: 2vw;
+}
+
+.button1:hover ~ .sale .sl{
+	animation-play-state: paused;
+ }
+.button1:hover ~ .sale .sl-2{
+	animation-play-state: paused;
+ }
+.button1:hover ~ .sale .sl-3{
+	animation-play-state: paused;
+ }
+
+.button1{
+	position: absolute;
+	width: 33vw;
+	height: 10vw;
+	right: -0.7vw;
+	top: 3.7vw;
+	transform: rotate(33deg);
+	z-index: 100;
+  }
+
+.mark1{
+	width: 33vw;
+	height: 10vw;
+  }
+
+
+
+/* Второй экран */
+ .second{
+  position: absolute;
+  width: 97vw;
+  height: 21vw;
+  top: 3vw;
+  background-size: cover;
+  animation: running waves 10s ease-in-out infinite alternate;
+ }
+
+ @keyframes waves{
+  0% { background-image: url("../img/wave1.svg");}
+  10% { background-image: url("../img/wave2.svg");}
+  20% { background-image: url("../img/wave3.svg");}
+  30% { background-image: url("../img/wave1.svg");}
+  40% { background-image: url("../img/wave2.svg");}
+  50% { background-image: url("../img/wave3.svg");}
+  60% { background-image: url("../img/wave1.svg");}
+  70% { background-image: url("../img/wave2.svg");}
+  80% { background-image: url("../img/wave3.svg");}
+  90%  { background-image: url("../img/wave1.svg");}
+  100% { background-image: url("../img/wave2.svg");}
+ }
+
+ .mark2{
+  position: absolute;
+  width: 26vw;
+  height: 17vw;
+  transform: rotate(-25deg);
+  left: 0vw;
+  top: -6vw;
+  z-index: 100;
+ }
+
+ .mark2:hover ~ .second{
+  animation-play-state: paused;
+}
+
+
+ /* Третий экран */
+ .thirdscreen{
+  width: 97vw;
+  height: 66vw;
+  background-color: #ffffff;
+  position: relative;
+  left: 1vw;
+  top: 3vw;
+ }
+
+ .mark3 {
+  position: absolute;
+  width: 30vw;
+  height: 20vw;
+  right: 3vw;
+  transform: rotate(25.5deg);
+  top: -9vw;
+ }
+
+ .back{
+	position: relative;
+	width: 93vw;
+	height: 66vw;
+	left: 2vw;
+ }
+ 
+ /* .fon{
+	display: none;
+ } */
+
+ .n1{
+	position: absolute;
+	font-size: 7vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left: 9vw;
+	top: 7vw;
+	animation: rotation 1s infinite;
+ }
+
+
+@keyframes rotation {
+	0% {
+	  transform: rotate(0deg)}
+	50% {
+	  transform: rotate(30deg);
+	}
+	100% {
+		transform: rotate(0deg)}
+  }
+
+ .n2{
+	position: absolute;
+	font-size: 7vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left: 9vw;
+	top: 28vw;
+	animation: rotation2 1s infinite;
+ }
+
+
+
+@keyframes rotation2 {
+	0% {
+	  transform: rotate(0deg)}
+	50% {
+	  transform: rotate(-45deg);
+	}
+	100% {
+		transform: rotate(0deg)}
+  }
+
+ .n3{
+	position: absolute;
+	font-size: 7vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left: 9vw;
+	top: 51vw;
+	animation: rotation3 1s infinite;
+ }
+
+
+@keyframes rotation3 {
+	0% {
+	  transform: rotate(0deg)}
+	50% {
+	  transform: rotate(45deg);
+	}
+	100% {
+		transform: rotate(0deg)}
+  }
+
+.n4{
+	position: absolute;
+	font-size: 7vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left: 41vw;
+	top: 9vw;
+	animation: rotation4 1s infinite;
+}
+@keyframes rotation4 {
+	0% {
+	  transform: rotate(0deg)}
+	50% {
+	  transform: rotate(-25deg);
+	}
+	100% {
+		transform: rotate(0deg)}
+  }
+
+.n5{
+	position: absolute;
+	font-size: 7vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left:41vw;
+	top: 27vw;
+	animation: rotation5 1s infinite;
+}
+@keyframes rotation5 {
+	0% {
+	  transform: rotate(0deg)}
+	50% {
+	  transform: rotate(55deg);
+	}
+	100% {
+		transform: rotate(0deg)}
+  }
+
+.n6{
+	position: absolute;
+	font-size: 7vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left: 39vw;
+	top: 47vw;
+	animation: rotation6 1s infinite;
+}
+@keyframes rotation6 {
+	0% {
+	  transform: rotate(0deg)}
+	50% {
+	  transform: rotate(-45deg);
+	}
+	100% {
+		transform: rotate(0deg)}
+  }
+
+.n7{
+	position: absolute;
+	font-size: 7vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left: 71vw;
+	top: 9vw;
+	animation: rotation 1s infinite;
+}
+
+.n8{
+	position: absolute;
+	font-size: 7vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left: 71vw;
+	top: 28vw;
+	animation: rotation2 1s infinite;
+}
+
+.n9{
+	position: absolute;
+	font-size: 7vw;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	left: 71vw;
+	top: 51vw;
+	animation: rotation3 1s infinite;
+}
+
+
+.mark3:hover ~ .n1{
+	animation: stop 2s infinite;
+ }
+ .mark3:hover ~ .n2{
+	animation: stop 2s infinite;
+ }
+ .mark3:hover ~ .n3{
+	animation: stop 2s infinite;
+ }
+ .mark3:hover ~ .n4{
+	animation: stop 2s infinite;
+ }
+ .mark3:hover ~ .n5{
+	animation: stop 2s infinite;
+ }
+ .mark3:hover ~ .n6{
+	animation: stop 2s infinite;
+ }
+ .mark3:hover ~ .n7{
+	animation: stop 2s infinite;
+ }
+ .mark3:hover ~ .n8{
+	animation: stop 2s infinite;
+ }
+ .mark3:hover ~ .n9{
+	animation: stop 2s infinite;
+ }
+ @keyframes stop{
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(0deg);}
+}
+
+
+
+
+
+
+
+
+
+/* Четвертый экран */
+.fourthscreen{
+	position: relative;
+	width: 97vw;
+	height: 48vw;
+	top: 4vw;
+	left: 1vw;
+}
+.motion{
+	width: 97vw;
+	height: 48vw;
+	margin: 0vw;
+	overflow: hidden;
+	background-color: rgb(0, 0, 0);
+}
+.playlist{
+	display: flex;
+	width: 344vw;
+	animation: playlist 8s linear infinite;
+	animation-play-state: running;
+}
+
+.playlist:hover{
+	animation-play-state: paused;
+}
+
+
+.play1{
+	width: 42vw;
+	height: 48vw;
+	margin-right: 1vw;
+	background-color: #ffffff;
+}
+.play2 {
+	width: 42vw;
+	height: 48vw;
+	margin-right: 1vw;
+	background-color: #ffffff;
+}
+
+.play3{
+	width: 42vw;
+	height: 48vw;
+	margin-right: 1vw;
+	background-color: #ffffff;
+}
+
+
+.play4{
+	width: 42vw;
+	height: 48vw;
+	margin-right: 1vw;
+	background-color: #ffffff;
+}
+
+@keyframes playlist {
+	0% {margin-left: -172vw;}
+	100% {margin-left: 0px;}
+  }
+
+.pl{
+	position: relative;
+	width: 39vw;
+	height: 39vw;
+	background-color: #000000;
+	left: 1.5vw;
+	top: 1.5vw;
+	overflow: hidden;
+	display: block;
+}
+
+.front{
+	width: 37vw;
+	height: 37vw;
+	margin-top: 1vw;
+	margin-left: 1vw;
+}
+
+.on{
+	background-image: url("../img/off.svg");
+	background-size: 100%;
+	position: relative;
+	top: 2.5vw;
+	left: 5vw;
+	width: 32vw;
+	height: 5vw;
+}
+
+.on:hover{
+	background-image: url("../img/on.svg");
+}
+
+.mark4{
+	position: absolute;
+	width: 26vw;
+	height: 17vw;
+	left: 2vw;
+	top: -7vw;
+	transform: rotate(-27deg);
+	z-index: 100;
+}
+
+.mark4:hover ~ .motion  .playlist{
+	animation-play-state: paused;
+ }
+
+
+/* Пятый экран */
+.fifthscreen{
+	width: 97vw;
+	height: 63vw;
+	background-color: #ffffff;
+	position: relative;
+	left: 1vw;
+	top: 5vw;
+}
+
+/* Падение */
+.falling{
+	width: 97vw;
+	height: 63vw;
+	position: absolute;
+	overflow: hidden;
+}
+
+.fall.a, .fall.b, .fall.c, .fall.d, .fall.e, .fall.f {
+	position: absolute;
+	width: 33vw;
+	height: 10vw;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	top: -10vw;
+}
+.fall:hover{
+	animation-play-state: paused;
+}
+
+.fall.a {
+	animation-name: fall, trans-a;
+	animation-duration: 12s;
+}
+
+.fall.b {
+	animation-name: fall, trans-b;
+	animation-duration: 8s;
+}
+
+.fall.c {
+	animation-name: fall, trans-c;
+	animation-duration: 6s;
+}
+
+.fall.d {
+	animation-name: fall, trans-d;
+	animation-duration: 4s;
+}
+
+.fall.e {
+	animation-name: fall, trans-e;
+	animation-duration: 5s;
+}
+
+.fall.f {
+	animation-name: fall, trans-f;
+	animation-duration: 7s;
+}
+
+@keyframes fall {
+	from {top: -10vw;}
+	to {top: 72vw;}
+}
+
+@keyframes trans-a {
+	from {
+		transform: rotate(-10deg);
+	}
+	to {
+		transform: rotate(20deg);
+	}
+}
+
+@keyframes trans-b {
+	from {
+		transform: rotate(15deg);
+	}
+	to {
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes trans-c {
+	from {
+		transform: rotate(-15deg);
+	}
+	to {
+		transform: rotate(30deg);
+	}
+}
+
+@keyframes trans-d {
+	from {
+		transform: rotate(-20deg);
+	}
+	to {
+		transform: rotate(50deg);
+	}
+}
+
+@keyframes trans-e {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes trans-f {
+	from {
+		transform: rotate(10deg);
+	}
+	to {
+		transform: rotate(-10deg);
+	}
+}
+
+@keyframes trans-g {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(45deg);
+	}
+}
+
+@keyframes trans-h {
+	from {
+		transform: rotate(15deg);
+	}
+	to {
+		transform: rotate(-30deg);
+	}
+}
+
+.fall#a1 {
+	left: calc(50% - 60vw);
+	animation-delay: 0s;
+}
+
+.fall#a2 {
+	left: calc(50% - 20vw);
+	animation-delay: 0s;
+}
+
+.fall#a3 {
+	left: calc(50% - 35vw);
+	animation-delay: 0s;
+}
+
+.fall#a4 {
+	left: calc(50% - 50vw);
+	animation-delay: 1s;
+}
+
+.fall#a5 {
+	left: calc(50% + 60vw);
+	animation-delay: 0s;
+}
+
+.fall#a6 {
+	left: calc(50% + 20vw);
+	animation-delay: 0s;
+}
+
+.fall#b1 {
+	left: calc(50% - 30vw);
+	animation-delay: 2s;
+}
+
+.fall#b2 {
+	left: calc(50% - 60vw);
+	animation-delay: 4s;
+}
+
+.fall#b3 {
+	left: calc(50% + 40vw);
+	animation-delay: 3s;
+}
+
+.fall#b4 {
+	left: calc(50% + 30vw);
+	animation-delay: 3s;
+}
+
+.fall#b5 {
+	left: calc(50% - 13vw);
+	animation-delay: 0s;
+}
+
+.fall#b6 {
+	left: calc(50% - 33vw);
+	animation-delay: 0s;
+}
+
+
+.fall#c1 {
+	left: calc(50% + 18vw);
+	animation-delay: 3s;
+}
+
+.fall#c2 {
+	left: calc(50% - 70vw);
+	animation-delay: 2s;
+}
+
+.fall#c3 {
+	left: calc(50% + 3vw);
+	animation-delay: 1s;
+}
+
+.fall#c4 {
+	left: calc(50% - 9vw);
+	animation-delay: 2s;
+}
+
+.fall#c5 {
+	left: calc(50% - 13vw);
+	animation-delay: 3s;
+}
+
+.fall#c6 {
+	left: calc(50% + 12vw);
+	animation-delay: 3s;
+}
+
+
+
+.fall#d1 {
+	left: calc(50% - 5vw);
+	animation-delay: 1s;
+}
+
+.fall#d2 {
+	left: calc(50 + 45vw);
+	animation-delay: 1s;
+}
+
+.fall#d3 {
+	left: calc(50% + 8vw);
+	animation-delay: 4s;
+}
+
+.fall#d4 {
+	left: calc(50% - 18vw);
+	animation-delay: 4s;
+}
+
+.fall#d5 {
+	left: calc(50% - 40vw);
+	animation-delay: 4s;
+}
+
+.fall#d6 {
+	left: calc(50% - 26vw);
+	animation-delay: 4s;
+}
+
+.mark5{
+	position: absolute;
+	width: 35vw;
+	height: 26vw;
+	top: -8vw;
+	transform: rotate(20deg);
+	right: 5vw;
+	z-index: 100;
+}
+
+.mark5:hover ~ .falling .fall{
+	animation-play-state: paused;
+ }
+
+ .mark6{
+	position: absolute;
+	width: 33vw;
+	height: 10vw;
+	bottom: -5vw;
+	transform: rotate(15deg);
+	z-index: 100;
+}
+.mark7{
+	position: absolute;
+	width: 33vw;
+	height: 10vw;
+	bottom: -8vw;
+	transform: rotate(-5deg);
+	left: 25vw;
+	z-index: 100;
+}
+
+
+
+
+/* Лого */
+.logo{
+	width: 17vw;
+	height: 6vw;
+	position: relative;
+	left: 80vw;
+	top: 6vw;
+}
+
+
+/* Первая обложка */
+.dot{
+	background-color: #ffffff;
+	width: 37vw;
+	height: 37vw;
+	margin-top: 1vw;
+	margin-left: 1vw;
+	border-radius: 50%;
+	animation: dot 3s infinite ease-in-out;
+	/* animation-direction: alternate; */
+}
+
+/* @keyframes dot{
+	0% {transform: translate(0vw,0vw);}
+	12.5% {transform: translate(20vw,-30vw);}
+	25% {transform: translate(0vw,0vw);}
+	37.5% {transform: translate(-20vw,30vw);}
+	50% {transform: translate(0vw,0vw);}
+	62.5% {transform: translate( 20vw,30vw);}
+	75% {transform: translate(0vw,0vw);}
+	87.5% {transform: translate(-20vw,-30vw);}
+	100% {transform: translate(0vw,0vw);}
+} */
+
+
+/* Вторая обложка */
+.tochka{
+	display: flex;
+}
+
+.dot1{
+	background-color: #ffffff;
+	position: relative;
+	width: 18vw;
+	height: 18vw;
+	border-radius: 50%;
+	margin-left: 1vw;
+	margin-top: 1vw;
+}
+
+.dot1.q{
+	animation: dot1q 0.5s infinite ease-in-out;
+}
+/* @keyframes dot1q{
+	0% {transform: translate(0vw,0vw);}
+	50% {transform: translate(-10vw,-20vw);}
+	100% {transform: translate(0vw,0vw);}
+} */
+
+.dot1.w{
+	animation: dot1w 0.5s infinite ease-in-out;
+}
+/* @keyframes dot1w{
+	0% {transform: translate(0vw,0vw);}
+	50% {transform: translate(10vw,-20vw);}
+	100% {transform: translate(0vw,0vw);}
+} */
+
+
+.dot1.e{
+	animation: dot1e 0.5s infinite ease-in-out;
+}
+/* @keyframes dot1e{
+	0% {transform: translate(0vw,0vw);}
+	50% {transform: translate(-10vw,20vw);}
+	100% {transform: translate(0vw,0vw);}
+} */
+
+.dot1.r{
+	animation: dot1r 0.5s infinite ease-in-out;
+}
+/* @keyframes dot1r{
+	0% {transform: translate(0vw,0vw);}
+	50% {transform: translate(10vw,20vw);}
+	100% {transform: translate(0vw,0vw);}
+} */
+
+/* Третья обложка */
+.dot2{
+	background-color: #ffffff;
+	width: 9vw;
+	height: 9vw;
+	border-radius: 50%;
+	margin-left: 0.6vw;
+	margin-top: 0.6vw;
+}
+
+/* Четвертая */
+/* .coverik{
+	width: 38vw;
+	height: 38vw;
+	margin-top: 0.5vw;
+	margin-left: 0.5vw;
+} */
